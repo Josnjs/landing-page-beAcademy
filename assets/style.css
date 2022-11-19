@@ -71,6 +71,42 @@ a:hover {
     text-transform: uppercase;
 }
 
+.footer {
+    display: flex;
+    padding: 2rem 4rem;
+    margin-top: 3rem;
+    justify-content: space-between;
+    background-color: #111133;
+    color: #f0f0f0;
+    align-items: center;
+    text-align: justify;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+}
+
+.cont1,
+.cont3 {
+
+    padding: 0 3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer ul li {
+    margin: 12px 0 0 12px;
+    text-align: center;
+}
+
+.haste {
+    width: 2px;
+    height: 90px;
+    background-color: #f0f0f0;
+    margin: 0 12px 0 12px;
+}
+
 @media screen and (max-width: 860px) {
 
     .header {
