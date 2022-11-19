@@ -136,4 +136,12 @@ a:hover {
         text-align: center;
     }
 
+    .cards {
+        flex-direction: column;
+    }
+
+    .card1 {
+        flex-direction: column-reverse;
+    }
+
 }

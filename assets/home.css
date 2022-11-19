@@ -1,0 +1,58 @@
+.title {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.title-2 {
+    text-decoration: underline #ff6004;
+}
+
+.title h3 {
+    text-align: center;
+    margin: 3rem;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.cards {
+    width: 80%;
+}
+
+.cards img {
+    width: 38%;
+    border-radius: 10px;
+}
+
+.hastes {
+    margin: 0 auto;
+    height: 2px;
+    width: 80%;
+    background-color: #111133;
+}
+
+.card1,
+.card2 {
+    display: flex;
+    margin: 4rem auto;
+    font-weight: 700;
+    font-size: 18px;
+    color: #111133;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.card3 {
+    margin: 4rem auto;
+    font-weight: 700;
+    font-weight: 700;
+    font-size: 18px;
+    color: #111133;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.card3 img {
+    margin: 2rem;
+}
