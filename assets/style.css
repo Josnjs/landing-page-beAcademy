@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+body {
+    background-color: #ececec;
+}
+
+.header {
+    background-color: #111133;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
+    font-weight: 700;
+}
+
+.span-code {
+    color: #ff6004;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.navBar {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    font-weight: 500;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #f0f0f0;
+    align-items: center;
+}
+
+a:hover {
+    color: #afafaf;
+    transition: .3s ease-in-out;
+    text-decoration: underline #ff6004;
+}
+
+.matricula {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.btn-matricula {
+    padding: 1rem 6rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6004;
+    color: #f0f0f0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn-matricula:hover {
+    background-color: #e45502;
+    transition: .4s ease-in-out;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 860px) {
+
+    .header {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header h1 a {
+        font-size: 22px;
+    }
+
+    .header ul a {
+        font-size: 14px;
+    }
+
+}
