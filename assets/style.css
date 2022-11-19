@@ -122,4 +122,18 @@ a:hover {
         font-size: 14px;
     }
 
+    .footer {
+        flex-direction: column;
+    }
+
+    .haste {
+        width: 180px;
+        height: 1px;
+        margin: 12px 12px;
+    }
+
+    .cont2 {
+        text-align: center;
+    }
+
 }
