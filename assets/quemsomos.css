@@ -4,6 +4,10 @@
     padding: 4rem;
 }
 
+h3 {
+    margin-bottom: 1rem;
+}
+
 .section-text {
     display: flex;
     flex-direction: column;
