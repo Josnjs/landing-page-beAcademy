@@ -1,0 +1,42 @@
+.cursos {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: 700;
+    text-decoration: underline #ff6004;
+}
+
+.card-cursos {
+    margin: 0 auto;
+    width: 250px;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: #111133;
+    color: #f0f0f0;
+}
+
+.card-cursos img {
+    width: 35%;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 860px) {
+    .cursos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+    .cursos {
+        grid-template-columns: 1fr;
+    }
+}
