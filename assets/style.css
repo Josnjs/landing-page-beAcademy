@@ -71,6 +71,27 @@ a:hover {
     text-transform: uppercase;
 }
 
+.form {
+    border-radius: 10px;
+    width: 40%;
+    margin: 2rem auto;
+    padding: 2rem 2rem;
+    background-color: #111133;
+    color: #f0f0f0;
+}
+
+.form input {
+    margin: 1rem;
+    width: 50%;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+}
+
+.form-types {
+    /* border: 1px solid white; */
+    text-align: end;
+}
+
 .footer {
     display: flex;
     padding: 2rem 4rem;
@@ -144,4 +165,18 @@ a:hover {
         flex-direction: column-reverse;
     }
 
+}
+
+@media screen and (max-width: 1040px) {
+
+    .form {
+        padding: 2rem 0;
+        width: 90%;
+    }
+
+    .form-types {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
