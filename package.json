@@ -1,0 +1,25 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "landingpage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josnjs/landing-page-beAcademy.git"
+  },
+  "author": "joseildols",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josnjs/landing-page-beAcademy/issues"
+  },
+  "homepage": "https://github.com/Josnjs/landing-page-beAcademy#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "mysql": "^2.18.1"
+  }
+}
