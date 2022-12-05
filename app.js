@@ -9,7 +9,7 @@ app.get("/logs", (req, res) => {
     const find = connection.query(`SELECT * FROM users`, (err, rows, field) => {
         err ? res.send(err) : res.send(rows);
     });
-})
+});
 
 
 app.set("view engine", "hbs");

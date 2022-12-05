@@ -49,6 +49,44 @@ a:hover {
     text-decoration: underline #ff6004;
 }
 
+.card-form {
+    border: 1px solid;
+    width: 35%;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: #111133;
+    color: #f0f0f0;
+    border-radius: 10px;
+}
+
+input {
+    padding: .6rem 2rem;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.btn {
+    text-align: center;
+}
+
+button {
+    padding: .8rem;
+    border-radius: 10px;
+    color: #f0f0f0;
+    background-color: #1f1f3d;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-color: #f0f0f0;
+}
+
+button:hover {
+    background-color: #ff6004;
+    transition: .3s;
+}
 
 .footer {
     display: flex;
@@ -121,6 +159,15 @@ a:hover {
 
     .card1 {
         flex-direction: column-reverse;
+    }
+
+    .card-form {
+        width: 70%;
+    }
+
+    button {
+        padding: .5rem;
+        font-size: 13px;
     }
 
 }
