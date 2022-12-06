@@ -31,13 +31,14 @@ app.post("/register", (req, res) => {
 
     let namePerson = req.body.name;
     let emailPerson = req.body.email;
+    let commentPerson = req.body.comment;
     let inserts;
 
-    if (namePerson && emailPerson) {
-        inserts = connection.query(`INSERT INTO users (name, email) VALUES ('${namePerson}','${emailPerson}')`);
-        console.log({ inserts });
+    if (namePerson && emailPerson && commentPerson) {
+        insertsUsers = connection.query(`INSERT INTO users (name, email) VALUES ('${namePerson}','${emailPerson}')`);
+        insertsComment = connection.query(`INSERT INTO comment (comments) VALUES ('${commentPerson}')`);
     }
-    inserts ? res.send(`Dados cadastrados, Nome: ${namePerson}.`) : res.send("Dados nao cadastrados.");
+    inserts ? res.send(`Parabéns, você se cadastrou com sucesso, ${namePerson}!!!.`) : res.send("Dados nao cadastrados, preencha todos os campos!");
 });
 
 
