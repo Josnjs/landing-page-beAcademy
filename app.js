@@ -32,13 +32,17 @@ app.post("/register", (req, res) => {
     let namePerson = req.body.name;
     let emailPerson = req.body.email;
     let commentPerson = req.body.comment;
-    let inserts;
 
     if (namePerson && emailPerson && commentPerson) {
+
         insertsUsers = connection.query(`INSERT INTO users (name, email) VALUES ('${namePerson}','${emailPerson}')`);
-        insertsComment = connection.query(`INSERT INTO comment (comments) VALUES ('${commentPerson}')`);
+        insertsComment = connection.query(`INSERT INTO comments (comment) VALUES ('${commentPerson}')`);
+
+        res.send(`Parabéns, você se cadastrou com sucesso, ${namePerson}!!!.`)
+    } else {
+        res.send("Dados nao cadastrados...");
     }
-    inserts ? res.send(`Parabéns, você se cadastrou com sucesso, ${namePerson}!!!.`) : res.send("Dados nao cadastrados, preencha todos os campos!");
+
 });
 
 
