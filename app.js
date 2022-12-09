@@ -1,6 +1,7 @@
 const express = require("express");
 const connection = require("./db");
 const bodyParser = require("body-parser");
+const { query } = require("express");
 
 
 const app = express();
@@ -29,17 +30,17 @@ app.get("/cursos", (req, res) => {
 
 app.post("/register", (req, res) => {
 
-    let namePerson = req.body.name;
-    let emailPerson = req.body.email;
-    let commentPerson = req.body.comment;
+    let name = req.body.name;
+    let email = req.body.email;
+    let lang = req.body.curso;
 
-    if (namePerson && emailPerson && commentPerson) {
+    if (name && email && lang) {
 
-        insertsUsers = connection.query(`INSERT INTO users (name, email, comments) VALUES ('${namePerson}','${emailPerson}','${commentPerson}')`);
+        insertsUsers = connection.query(`INSERT INTO users (name, email, curso) VALUES ('${name}','${email}','${lang}')`);
 
-        res.send("<h2>Dados cadastrados com sucesso!!!</h2>");
+        res.send(`<h3>Parabéns ${name}, seu cadastro foi realizado com sucesso no curso de ${lang}</h3>`);
     } else {
-        res.send("<h2>Dados não cadastrados...</h2>"
+        res.send("<h3>Dados não cadastrados, preencha todos os campos corretamente...</h3"
 
         );
     }

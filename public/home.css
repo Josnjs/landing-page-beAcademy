@@ -56,3 +56,12 @@
 .card3 img {
     margin: 2rem;
 }
+
+select,
+value {
+    padding: .6rem 2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
