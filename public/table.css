@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table {
+    margin: 5rem auto;
+    padding: 1rem;
+    border-top: 1px solid;
+}
+
+caption {
+    font-weight: 700;
+    font-size: 22px;
+    padding: 1rem;
+    background-color: #111133;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+th {
+    border: 1px solid;
+    padding: .7rem;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #dfdfdf;
+}
+
+td {
+    border-bottom: 1px solid;
+    padding: .5rem;
+    font-size: 18px;
+    text-align: center;
+}

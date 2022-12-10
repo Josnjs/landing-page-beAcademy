@@ -50,7 +50,8 @@ app.post("/register", (req, res) => {
 
 app.get("/logs", (req, res) => {
     const find = connection.query(`SELECT * FROM users`, (err, rows, field) => {
-        err ? res.send(err) : res.send(rows);
+        err ? console.log(err) : console.log("Busca bem sucedida...");
+        res.render("logs", { field: rows })
     });
 });
 
