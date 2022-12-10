@@ -1,7 +1,7 @@
 const express = require("express");
 const connection = require("./db");
 const bodyParser = require("body-parser");
-const { query } = require("express");
+
 
 
 const app = express();
