@@ -39,7 +39,7 @@ app.post("/register", (req, res) => {
 
         res.send(`<h3>Parabéns ${name}, seu cadastro foi realizado com sucesso no curso de ${lang}</h3>`);
     } else {
-        res.send("<h3>Dados não cadastrados, preencha todos os campos corretamente...</h3"
+        res.send("<h3>Dados não cadastrados, preencha todos os campos corretamente...</h3>"
 
         );
     }
