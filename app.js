@@ -52,6 +52,14 @@ app.get("/logs", (req, res) => {
         err ? console.log(err) : console.log("Busca bem sucedida...");
         res.render("logs", { field: rows })
     });
+
+});
+
+app.get('/users', (req, res) => {
+    const find = connection.query(`SELECT * FROM users`, (err, rows, field) => {
+        err ? console.log(err) : console.log("Busca bem sucedida...");
+        res.send({ field: rows });
+    });
 });
 
 
